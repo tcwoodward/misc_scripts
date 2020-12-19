@@ -1,13 +1,10 @@
 # Start of Program
-
 print("\nBMI Calculator")
 
 # Choosing method of BMI calculation
-
 x = input("Metric or Imperial (M or I):")
 
 # Calculating BMI by Imperial Standards
-    
 if (x == "I" or x == "i"):
     feet = int(input("\nPlease Enter Height: \nFeet: "))
     inches = int(input("Inches: "))
@@ -20,7 +17,6 @@ if (x == "I" or x == "i"):
     bmi = weight_lbs / (height_in ** 2) * 703
     
 # Calculating BMI by Metric Standards
-    
 elif (x == "M" or x == "m"):
     kg = float(input("\nPlease Enter Weight (kg): "))
     cm = float(input("\nPlease Enter Height (cm): "))
@@ -29,12 +25,10 @@ elif (x == "M" or x == "m"):
     bmi = kg / (m * m)
     
 # Default fallback
-    
 else:
     input("Please restart the program and try again. Press any key to exit.")	
 
 # Printout of results
-
 print("\nYour BMI is:", round(bmi, 2))
 if (bmi <= 18.5):
     print("You are underweight.")
@@ -46,5 +40,4 @@ else:
     print("You are obese.")
 
 input("Press any key to exit.")
-
 # End of program
