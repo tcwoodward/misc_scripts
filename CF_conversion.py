@@ -1,3 +1,4 @@
+#!/bin/python3
 """ 
 This is a C/F calculator I made to help myself learn some of the basics of Python as is the first program/script
 I've created from scratch! It is meant to be ran in a terminal as an executed program.
