@@ -15,16 +15,16 @@ results = "\n%d %s is %d %s."
 x = input("\nPlease choose Fahrenheit or Celsius (F or C): ")
 
 # Conditional Statements and Maths
-if (x == "F" or x == "f"):
+if (x.casefold() == "f"):
     f = float(input(prompt%F))
     c = (f - 32) / 1.8
     print(results%(f,F,c,C))
-elif (x == "C" or x == "c"):
+elif (x.casefold() == "c"):
     c = float(input(prompt%C))
     f = c * 1.8 + 32
     print(results%(c,C,f,F))
 else:
     print("\nPlease restart the calculator and try again.")  
     
-input("\nPress any key to quit.")    
+input("\nPress enter to quit.")    
 # End of program  
