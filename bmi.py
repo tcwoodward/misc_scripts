@@ -1,3 +1,5 @@
+#!/bin/python3
+
 # Start of Program
 print("\nBMI Calculator")
 
@@ -5,19 +7,19 @@ print("\nBMI Calculator")
 x = input("Metric or Imperial (M or I):")
 
 # Calculating BMI by Imperial Standards
-if (x == "I" or x == "i"):
-    feet = int(input("\nPlease Enter Height: \nFeet: "))
-    inches = int(input("Inches: "))
+if (x.casefold() == "i"):
+    feet = float(input("\nPlease Enter Height: \nFeet: "))
+    inches = float(input("Inches: "))
 
     foot = 12
     height_in = foot * feet + inches
 
-    weight_lbs = int(input("\nPlease Enter Weight (lbs): "))
+    weight_lbs = float(input("\nPlease Enter Weight (lbs): "))
 
     bmi = weight_lbs / (height_in ** 2) * 703
     
 # Calculating BMI by Metric Standards
-elif (x == "M" or x == "m"):
+elif (x.casefold() == "m"):
     kg = float(input("\nPlease Enter Weight (kg): "))
     cm = float(input("\nPlease Enter Height (cm): "))
     
@@ -39,5 +41,4 @@ elif (25 > bmi and bmi > 18.5):
 else:
     print("You are obese.")
 
-input("Press any key to exit.")
 # End of program
